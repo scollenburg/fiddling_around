@@ -31,7 +31,7 @@ sap.ui.jsview("ui5_listbox_visibility.myview", {
 		// Buttons for toggling visibility
 		var oButton = new sap.ui.commons.Button(oController
 				.createId("bshowshapes"), {
-			text : "Toggle /uistate/showColors",
+			text : "Toggle /uistate/showshapes",
 			press : function() {
 				oController.toggleUIState("showshapes");
 			}
