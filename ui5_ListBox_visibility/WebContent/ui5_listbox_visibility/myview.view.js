@@ -121,15 +121,8 @@ sap.ui.jsview("ui5_listbox_visibility.myview", {
 		 */
 		oCell.addContent(olbShapes);
 
-		// Workaround...
+		// !!! Workaround !!!
 		olbShapes.addDelegate(this.oC.getHider(), false, olbShapes, false);
-
-		// olbShapes.attachEvent("onAfterRendering", olbShapes, function() {
-		// oC.onAfterRendering();
-		// });
-		// olbShapes.attachEvent("AfterRendering", olbShapes, function() {
-		// oC.onAfterRendering();
-		// });
 
 		oCell.addContent(oddShapes);
 		oRow.addCell(oCell);
@@ -172,7 +165,7 @@ sap.ui.jsview("ui5_listbox_visibility.myview", {
 		oCell.addContent(olbColors);
 		oCell.addContent(oddColors);
 
-		// Workaround...
+		// !!! Workaround !!!
 		olbColors.addDelegate(this.oC.getHider(), false, olbColors, false);
 
 		oRow.addCell(oCell);
